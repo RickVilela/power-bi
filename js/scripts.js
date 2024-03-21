@@ -32,3 +32,28 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+$(document).ready(function () {
+    $(".expand-image").click(function (e) {
+        e.preventDefault();
+        var imageUrl = $(this).data("image-src");
+        $(".gallery-image").attr("src", imageUrl);
+        $(".gallery-container").fadeIn();
+    });
+
+    $(".gallery-container").click(function (e) {
+        // Verifica se o alvo do clique é a própria área de fundo
+        if ($(e.target).hasClass("gallery-container")) {
+            $(".gallery-container").fadeOut();
+        }
+    });
+
+    $(".close-btn").click(function () {
+        $(".gallery-container").fadeOut();
+    });
+
+    $(document).keyup(function (e) {
+        if (e.key === "Escape") {
+            $(".gallery-container").fadeOut();
+        }
+    });
+});

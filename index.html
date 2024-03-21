@@ -16,12 +16,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Estilos para dispositivos móveis */
+            @media only screen and (max-width: 600px) {
+                .hide-on-mobile {
+                    display: none; /* Oculta a imagem em dispositivos móveis */
+                }
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <img src="./assets/img/logo-lightsystem.png" alt="">
+                <img src="./assets/img/logo-lightsystem.png" alt="" style="height: 4rem">
+                <img src="./assets/img/Power-BI-Symbol.png" style="height: 4rem" class="hide-on-mobile">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
@@ -29,7 +38,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Vantagens</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#demonstracao">Demonstração</a></li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
@@ -42,55 +52,40 @@
         </nav>
         <!-- Mashead header-->
         <header class="masthead">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">LS Analytics Business Intelligence</h1>
-                            <p class="lead fw-normal text-muted mb-5">Soluções de BI personalizadas e inovadoras, projetadas para atender às necessidades específicas da sua empresa e impulsionar seu sucesso empresarial.</p>
-                           
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- Masthead device mockup feature-->
-                        <div class="masthead-device-mockup">
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%"></stop>
-                                        <stop class="gradient-end-color" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
-                            <div class="device-wrapper">
-                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                    <div class="screen bg-black">
-                                    
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo_video.mp4" type="video/mp4" /></video>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="w-100">
+                <img src="./assets/img/banner.png" class="img-fluid w-100" alt="Banner Ls Analytics">
             </div>
         </header>
+
+        <section id="video-section">
+            <div class="container-video d-flex justify-content-center align-items-center w-100 flex-column">
+                <div class="w-100 d-flex flex-column align-items-center justify-content-center">
+                    <h2>Assista nosso video</h2>
+                    <div class="video bg-black">
+
+                    </div>
+                </div>
+                <div class="w-100 d-flex align-items-center justify-content-center mt-5">
+                    <button class="btn-orcamento btn btn-primary px-5"><b>Solicitar Orçamento</b></button>
+                </div>
+            </div>
+        </section>
+
         <!-- Quote/testimonial aside-->
-        <aside class="text-center bg-gradient-primary-to-secondary">
+        <aside class="container-ls text-center">
             <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"O LS Analytics é o departamento de Business Intelligence da Light System, especializado em transformar dados em insights acionáveis para impulsionar o crescimento e a tomada de decisões inteligentes."</div>
-                        <img src="assets/img/logo.png" alt="..." style="height: 8rem" />
+                <div class="row gx-5 justify-content-between align-items-center">
+                    <div class="col-xl-6">
+                        <div class="h2 fs-1 mb-4">O LS Analytics é o departamento de Business Intelligence da Light System, especializado em transformar dados em decisões inteligentes.</div>
+                    </div>
+                    <div class="col-xl-6">
+                        <img class="img-fluid" src="assets/img/mockup-grafico.png" alt="Mokup Grafico">
                     </div>
                 </div>
             </div>
         </aside>
+
+       
         <!-- App features section-->
         <section id="features">
             <div class="container px-5">
@@ -101,17 +96,17 @@
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-globe icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Ampla Gama de Serviços</h3>
-                                        <p class="text-muted mb-0">Análise, relatórios, visualização e consultoria adaptados.</p>
+                                        <i class="bi-phone icon-feature text-white d-block mb-3"></i>
+                                        <h3 class="font-alt text-white">Aplicativo Integrado IOS e Android</h3>
+                                        <p class="text-white mb-0">Veja os dados da sua empresa diretamente do aplicativo!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-box icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Soluções Personalizadas</h3>
-                                        <p class="text-muted mb-0">Compromisso em atender às necessidades específicas dos clientes.</p>
+                                        <i class="bi-box icon-feature text-white d-block mb-3"></i>
+                                        <h3 class="font-alt text-white">Soluções Personalizadas</h3>
+                                        <p class="text-white mb-0">Compromisso em atender às necessidades específicas dos clientes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -119,17 +114,17 @@
                                 <div class="col-md-6 mb-5 mb-md-0">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-graph-up icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Expertise em BI</h3>
-                                        <p class="text-muted mb-0">Transformação de dados em insights acionáveis para crescimento</p>
+                                        <i class="bi-graph-up icon-feature text-white d-block mb-3"></i>
+                                        <h3 class="font-alt text-white">Expertise em BI</h3>
+                                        <p class="text-white mb-0">Transformação de dados em insights acionáveis para crescimento</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Equipe Experiente</h3>
-                                        <p class="text-muted mb-0">Analistas e especialistas em BI para otimizar o desempenho do negócio.</p>
+                                        <i class="bi-patch-check icon-feature text-white d-block mb-3"></i>
+                                        <h3 class="font-alt text-white">Equipe Experiente</h3>
+                                        <p class=" mb-0 text-white">Analistas e especialistas em BI para otimizar o desempenho do negócio.</p>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +133,13 @@
                     <div class="col-lg-4 order-lg-0">
                         <!-- Features section device mockup-->
                         <div class="features-device-mockup">
-                            <img src="./assets/img/desenho.jpg" alt="" width="400" height="300">
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-black">
+                                        <img style="max-width: 100%; height: 100%" src="assets/img/graficos.jpeg"></img>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,13 +148,59 @@
         <!-- Basic features section-->
         <section class="bg-light">
             <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Por Que Escolher o LS Analytics?</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Escolher o LS Analytics significa escolher uma parceria de confiança para impulsionar sua jornada de análise de dados. Nossa equipe está dedicada a fornecer soluções personalizadas, suporte excepcional e resultados mensuráveis que agregam valor real ao seu negócio.</p>
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-center">
+                    <div class="col-12 col-lg-12">
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Quando o assunto é análise de dados, entendemos que cada empresa possui necessidades únicas, é por isso que através do LS Analytics oferecemos soluções em análises personalizadas e inovadoras, projetadas para impulsionar o sucesso do seu negócio e ajuda-lo a extrair o máximo valor dos seus dados e transformá-los em decisões poderosas</p>
                     </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                </div>
+
+                <div class="row gx-5 mt-5 align-items-center justify-content-between justify-content-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/img/1.PNG" alt="Imagem 1" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 mt-4">
+                        <h4>1. Consultoria em BI:</h4>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Nossa equipe de especialistas em BI trabalhará em estreita colaboração com você, entendendo suas necessidades específicas e desenvolvendo estratégias personalizadas de análise de dados para sua empresa</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 mt-5 align-items-center justify-content-between justify-content-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/img/2.PNG" alt="Imagem 2" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 mt-4">
+                        <h4>2. Desenvolvimento de Dashboards Personalizados:</h4>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Criamos dashboards intuitivos e visualmente atraentes, fornecendo uma visão completa de indicadores do seu negócio.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 mt-5 align-items-center justify-content-between justify-content-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/img/3.PNG" alt="Imagem 3" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 mt-4">
+                        <h4>3. Análise Preditiva e Modelagem de Dados:</h4>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Utilizando técnicas avançadas de análise de dados, forneceremos informações específicas para ajudá-lo a antecipar tendências e tomar decisões proativas.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 mt-5 align-items-center justify-content-between justify-content-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/img/4.PNG" alt="Imagem 4" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 mt-4">
+                        <h4>4. Integração de Ferramentas de BI:</h4>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Nosso serviço de BI é integrado ao sistema, permitindo que gráficos sejam atualizados automaticamente de acordo com a operação da empresa.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 mt-5 align-items-center justify-content-between justify-content-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/img/5.PNG" alt="Imagem 4" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-6 mt-4">
+                        <h4>5. Treinamento e Capacitação:</h4>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">Além de Fornecer soluções de BI, oferecemos treinamentos abrangentes para capacitar sua equipe a utilizar plenamente as ferramentas disponibilizadas.</p>
                     </div>
                 </div>
             </div>
@@ -161,69 +208,105 @@
         <!-- Call to action section-->
         <section class="cta">
             <div class="cta-content">
-                <div class="container px-5">
-                    <h2 class="text-white lh-1 mb-4">
+                <div class="container text-center px-5">
+                    <h2 class="text-white  lh-1 mb-4">
                         Pronto para levar sua análise de dados para o próximo nível?
                     </h2>
                     <p class="text-white">
-                        Entre em contato conosco hoje mesmo para descobrir como o LS Analytics pode impulsionar o crescimento e o sucesso do seu negócio. Não perca mais tempo, comece a transformar seus dados em insights acionáveis agora mesmo!
+                        Entre em contato conosco hoje mesmo para descobrir como o LS Analytics pode impulsionar o crescimento e o sucesso do seu negócio. Não perca mais tempo, e transforme dados em <b>SOLUÇÕES INTELIGENTES</b>.
                     </p>
-                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#feedbackModal">Quero insights acionáveis agora</a>
+                    <a class="btn btn-light py-3 px-5 mt-5 rounded" data-bs-toggle="modal" data-bs-target="#feedbackModal">Veja uma demonstração</a>
                 </div>
             </div>
         </section>
         <!-- App badge section-->
-        <section class="bg-light" id="download">
+
+
+        <section class="bg-light gallery text-center" id="galeria">
+            <h1>Galeria</h1>
             <div class="container px-5">
-                <h2 class="text-center font-alt mb-4">Galeria</h2>
-                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="./assets/img/1.PNG" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./assets/img/2.PNG" class="d-block w-100" alt="..."> 
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/img/3.PNG" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/img/4.PNG" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/img/6.PNG" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/img/7.PNG" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/img/8.PNG" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Próximo</span>
-                        </button>
-                      </div>
-                </div>
+                <div id="top"></div>
+                    <div class="row">
+                        <ul>
+                            <li>
+                                <a href="#" class="expand-image" data-image-src="./assets/img/1.PNG">
+                                    <img src="./assets/img/1.PNG" alt="">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="expand-image" data-image-src="./assets/img/2.PNG">
+                                    <img src="./assets/img/2.PNG" alt="">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="expand-image" data-image-src="./assets/img/3.PNG">
+                                    <img src="./assets/img/3.PNG" alt="">
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <ul>
+                            <li>
+                                <a href="#" class="expand-image" data-image-src="./assets/img/5.PNG">
+                                    <img src="./assets/img/5.PNG" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="expand-image" data-image-src="./assets/img/6.PNG">
+                                    <img src="./assets/img/6.PNG" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="expand-image" data-image-src="./assets/img/7.PNG">
+                                    <img src="./assets/img/7.PNG" alt="">
+                                </a>
+                            </li>
+                          
+                        </ul>
+                    </div> <!-- / row -->
             </div>
         </section>
+
+        <section id="demonstracao" class="bg-light text-center">
+            <div class="container mb-5">
+                <h1>Demonstração</h1>
+                <small><b>Os exemplos fornecidos são meramente ilustrativos e contêm dados fictícios, em conformidade com a Lei Geral de Proteção de Dados (LGPD). Ao se cadastrar, você terá acesso a uma plataforma exclusiva e segura mediante fornecimento de e-mail e senha.</b></small>
+            </div>
+
+            <div class="text-center">
+                <h3>Comercial / Curva ABC</h3>
+                <iframe class="iframe" title="MultSystem_Comercial_MedAlt mapa" width="1080" height="620" src="https://app.powerbi.com/view?r=eyJrIjoiNjZhMDcyNGYtYjdhNy00NDMyLTgyODMtZGRmNTUzZWFhMWYzIiwidCI6IjBmYWU4ZDI0LTNlZjMtNDY2YS1iOTUzLWEyZDExMDcyNmI3NyJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+
+            <div class="text-center mt-4">
+                <h3>Financeiro</h3>
+                <iframe class="iframe" title="MultSystem_Financeiro_DRE" width="1080" height="620" src="https://app.powerbi.com/view?r=eyJrIjoiYWNhNjQ2MjAtZTM4NS00MjI0LWIwYzMtMTUwNmQ2MTViZDFhIiwidCI6IjBmYWU4ZDI0LTNlZjMtNDY2YS1iOTUzLWEyZDExMDcyNmI3NyJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+
+            <div class="text-center mt-4">
+                <h3>D.R.E</h3>
+                <iframe class="iframe" title="Financeiro" width="1080" height="620" src="https://app.powerbi.com/view?r=eyJrIjoiNmY2YjVhYWMtYTg1NC00MTgzLTk0N2YtOTA5ZDI3MGM1ODFkIiwidCI6IjBmYWU4ZDI0LTNlZjMtNDY2YS1iOTUzLWEyZDExMDcyNmI3NyJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+
+            <div class="text-center mt-4">
+                <h3>Oficinas Mecânicas</h3>
+                <iframe class="iframe" title="AutoFlex_Parc_clean" width="1080" height="620" src="https://app.powerbi.com/view?r=eyJrIjoiYjAzYzIwNDAtYjRmNi00ZWVhLWFmY2UtMjhhOGZiYzY2ZmNiIiwidCI6IjBmYWU4ZDI0LTNlZjMtNDY2YS1iOTUzLWEyZDExMDcyNmI3NyJ9" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+            
+        </section>
+
+        <div class="gallery-container">
+            <div class="gallery-content">
+                <img class="gallery-image" src="" alt="">
+                <span class="close-btn">Fechar</span>
+            </div>
+        </div>
+
         <!-- Footer-->
         <footer class="bg-black text-center py-5">
             <div class="container px-5">
@@ -294,14 +377,15 @@
                 </div>
             </div>
         </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
