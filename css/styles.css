@@ -11230,6 +11230,12 @@ footer a:hover, footer a:active, footer a:focus {
     }
 }
 
+@media only screen and (min-width: 768px) {
+  .gallery-list li {
+      flex: 0 0 calc(30% - 20px); /* Em telas menores que 768px, exibir apenas uma imagem por linha */
+  }
+}
+
 .row img {
   max-width: 100%;
   height: auto;
