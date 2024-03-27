@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
+
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             /* Estilos para dispositivos móveis */
@@ -60,9 +61,35 @@
         <section id="video-section">
             <div class="container-video d-flex justify-content-center align-items-center w-100 flex-column">
                 <div class="w-100 d-flex flex-column align-items-center justify-content-center">
-                    <h2>Assista nosso video</h2>
+                    
                     <div class="video bg-black">
-                        <iframe width="820" height="420" src="https://www.youtube.com/embed/_-VExRRKhq0?si=_7e9rulJRq0-8P-5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <iframe width="1030" height="460" src="https://www.youtube.com/embed/_-VExRRKhq0?si=jHSGaY4WKIICq2_o?autoplay=true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                <iframe width="1030" height="460" src="https://www.youtube.com/embed/G4vPCr-saNM?si=5Csm8pqEPa482mRK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                              <div class="carousel-item">
+                                <iframe width="1030" height="460" src="https://www.youtube.com/embed/AXZhnu4C0I0?si=6rCBCFERw3Y7Skdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+        
                     </div>
                 </div>
                 <div class="w-100 d-flex align-items-center justify-content-center mt-5">
@@ -443,7 +470,6 @@
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
