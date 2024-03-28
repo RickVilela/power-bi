@@ -11425,6 +11425,14 @@ footer a:hover, footer a:active, footer a:focus {
   position: relative;
   display: none;
   animation: 0.6s ease-in-out;
+  height: 75vh;
+}
+
+.carousel-inner > .carousel-item-galery {
+  position: relative;
+  display: none;
+  animation: 0.6s ease-in-out;
+  height: 25vh;
 }
 
 .carousel-item > .carousel-img {
