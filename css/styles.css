@@ -11170,6 +11170,11 @@ footer a:hover, footer a:active, footer a:focus {
   background-color: #f8f9fa;
 }
 
+.video{
+  width: 1080px;
+  height: auto;
+}
+
 .btn-orcamento{
   width: 500px;
   height: 50px;
@@ -11183,13 +11188,7 @@ footer a:hover, footer a:active, footer a:focus {
 
   .video{
     width: 100%;
-    height: 300px;
-    margin-left: 0;
-  }
-
-  .iframe{
-    width: 100%;
-    height: 350px;
+    height: auto;
   }
 }
 
@@ -11354,24 +11353,11 @@ footer a:hover, footer a:active, footer a:focus {
 
 
 @media only screen and (max-width: 767px) {
-  .iframe{
-    width: 100%;
-    height: 450px;
-  }
-
-  .video{
-    width: 100%;
-    height: 300px;
-    margin-left: 0;
-  }
-
-  #video-section{
-    padding-bottom: 1rem;
-  }
+  
 
   .btn-orcamento{
     width: 300px;
-    height: 50px;
+    height: 45px;
     font-size: large;
   }
 

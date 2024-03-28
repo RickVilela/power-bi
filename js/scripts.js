@@ -103,3 +103,6 @@ document.getElementById("carouselNext").addEventListener("click", function(e) {
   }
 });
 
+$('input').on('change', function() {
+  $('body').toggleClass('blue');
+});
