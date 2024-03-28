@@ -11432,7 +11432,7 @@ footer a:hover, footer a:active, footer a:focus {
   position: relative;
   display: none;
   animation: 0.6s ease-in-out;
-  height: 25vh;
+  height: auto;
 }
 
 .carousel-item > .carousel-img {
