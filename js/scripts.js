@@ -59,50 +59,12 @@ $(document).ready(function () {
 });
 
 
-const carousel = document.getElementById("carouselExampleControls");
-const items = carousel.querySelectorAll(".carousel-item");
-let currentItem = 0;
-let isActive = true;
-
-function setCurrentItem(index) {
-  currentItem = (index + items.length) % items.length;
-}
-
-function hideItem(direction) {
-  isActive = false;
-  items[currentItem].classList.add(direction);
-  items[currentItem].addEventListener("animationend", function() {
-    this.classList.remove("active", direction);
-  });
-}
-
-function showItem(direction) {
-  items[currentItem].classList.add("next", direction);
-  items[currentItem].addEventListener("animationend", function() {
-    this.classList.remove("next", direction);
-    this.classList.add("active");
-    isActive = true;
-  });
-}
-
-document.getElementById("carouselPrev").addEventListener("click", function(e) {
-  e.preventDefault();
-  if (isActive) {
-    hideItem("to-right");
-    setCurrentItem(currentItem - 1);
-    showItem("from-left");
+$('.carousel-galery .carousel-item-galery').each(function () {
+  var minPerSlide = 4;
+  var next = $(this).next();
+  if (!next.length) {
+  next = $(this).siblings(':first');
   }
-});
-
-document.getElementById("carouselNext").addEventListener("click", function(e) {
-  e.preventDefault();
-  if (isActive) {
-    hideItem("to-left");
-    setCurrentItem(currentItem + 1);
-    showItem("from-right");
-  }
-});
-
-$('input').on('change', function() {
-  $('body').toggleClass('blue');
-});
+  next.children(':first-child').clone().appendTo($(this));
+  
+  for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
