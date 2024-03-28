@@ -10945,7 +10945,7 @@ section {
 
 section.cta {
   position: relative;
-  padding: 12rem 0;
+  padding-top: 7rem;
   background-image: url("../assets/img/banner-call.png");
   background-position: center;
   background-size: cover;
@@ -11653,4 +11653,8 @@ footer a:hover, footer a:active, footer a:focus {
   border: none;
   padding: 0;
   padding-inline: 5px;
+}
+
+.btn-teste{
+  width: 400px;
 }
