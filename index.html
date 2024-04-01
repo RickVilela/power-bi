@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="./assets/fonts/Montserrat-Arabic Regular.ttf">
 
         <link href="css/styles.css" rel="stylesheet" />
         <style>
@@ -30,7 +31,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <img src="./assets/img/logo-lightsystem.png" alt="" style="height: 4rem">
+                <img src="./assets/img/logo-lightsystem.png" alt="" style="height: 3rem">
                 <img src="./assets/img/Power-BI-Symbol.png" style="height: 4rem" class="hide-on-mobile">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -39,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Vantagens</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#galeria">Galeria</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#galeria">Galeria</a></li> -->
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#demonstracao">Demonstração</a></li>
                     </ul>
                     <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="https://api.whatsapp.com/send/?phone=5519992933631&text=Olá%20gostaria%20de%20mais%20informações%20sobre%20o%20power%20bi&type=phone_number&app_absent=0" target="_blank">
@@ -53,12 +54,41 @@
         </nav>
         <!-- Mashead header-->
         <header class="masthead">
-            <div class="w-100">
-                <img src="./assets/img/banner.png" class="img-fluid w-100" alt="Banner Ls Analytics">
+            <div class="w-100 pt-5">
+                    <div class="container py-5">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-lg-7 order-lg-1 mb-5 mb-lg-0">
+                                <div class="container-fluid px-5">
+                                    <div class="row gx-5">
+                                        <div class="col-md-12 mb-5">
+                                            <!-- Feature item-->
+                                            <div class="text-center">
+                                                <h1 class="text-white">POTENCIALIZE SUA <br>TOMADA DE DECISÃO.</h1>
+                                                <p class="text-white mb-0">Descubra <b>insights poderosos</b> com nossa nova <b>ferramenta de análise de dados</b>. Transforme seus indicadores em <b>ações estratégicas.</b></p>
+                                            
+                                                <div class="d-flex flex-lg-row align-items-center justify-content-center pt-3">
+                                                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." height="70" width="130" /></a>
+                                                    <a class="me-lg-3 mb-4 mb-lg-0 mx-1" href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                                                </div>
+                            
+                                                <p class="text-white mb-0 mt-5">Serviço totalmente integrado ao Microsoft Power BI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-0 text-center">
+                                <!-- Features section device mockup-->
+                                <iframe class="iframe" height="280" width="100%" src="https://www.youtube.com/embed/_-VExRRKhq0?si=2BckXCVMqFPjJUIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <a href="https://api.whatsapp.com/send/?phone=5519992933631&amp;text=Olá%20gostaria%20de%20mais%20informações%20sobre%20o%20power%20bi&amp;type=phone_number&amp;app_absent=0" target="_blank" class="btn btn-primary px-5"><b>Solicitar Contato</b></a>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </header>
 
-        <section id="video-section">
+        <!-- <section id="video-section">
             <div class="container-video d-flex justify-content-center align-items-center w-100 flex-column">
                 <div class="w-100 d-flex flex-column align-items-center justify-content-center">
                     
@@ -96,7 +126,7 @@
             <div class="w-100 d-flex align-items-center justify-content-center">
                 <a href="https://api.whatsapp.com/send/?phone=5519992933631&text=Olá%20gostaria%20de%20mais%20informações%20sobre%20o%20power%20bi&type=phone_number&app_absent=0" target="_blank" class="btn-orcamento btn btn-primary px-5"  ><b>Solicitar Contato</b></a>
             </div>
-        </section>
+        </section> -->
 
         <!-- Quote/testimonial aside-->
         <aside class="container-ls text-center">
@@ -233,7 +263,7 @@
             </div>
         </section>
         <!-- Call to action section-->
-        <section class="cta">
+        <section class="cta" id="demonstracao">
             <div class="cta-content">
                 <div class="container text-center px-5">
                     <h2 class="text-white  lh-1 mb-4">
@@ -242,7 +272,21 @@
                     <p class="text-white">
                         Entre em contato conosco hoje mesmo para descobrir como o LS Analytics pode impulsionar o crescimento e o sucesso do seu negócio. Não perca mais tempo, e transforme dados em <b>SOLUÇÕES INTELIGENTES</b>.
                     </p>
-                    <a class="btn btn-light py-3 px-5 mt-5 rounded fs-5 btn-teste" href="#demonstracao"><b>Teste você mesmo</b></a>
+
+                    <div class="mt-5">
+                        <h5 class="text-white">Demonstração - Sistema Oficina (Autoflex)</h5>
+                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/G4vPCr-saNM?si=RkPRWvcJPimjToRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+
+                    <div class="mt-5">
+                        <h5 class="text-white">Demonstração - Sistemas Comerciais (Mult System e Simples+)</h5>
+                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/AXZhnu4C0I0?si=e48eIN-GNzQ_HmTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+
+                    <a class="btn btn-light py-3 px-5 mt-5 rounded fs-5 btn-teste" href="#modelos"><b>Teste você mesmo</b></a>
+
 
                     <p class="text-white mt-4">
                         Os exemplos fornecidos são meramente ilustrativos e contêm dados fictícios, em conformidade com a Lei Geral de Proteção de Dados (LGPD). Ao se cadastrar, você terá acesso a uma plataforma exclusiva e segura mediante fornecimento de e-mail e senha.
@@ -370,7 +414,7 @@
         
 
       
-        <section id="demonstracao" class="bg-light text-center">
+        <section id="modelos" class="bg-light text-center">
             <div class="text-center">
                 <h3>Comercial / Curva ABC</h3>
                 <iframe class="iframe" title="MultSystem_Comercial_MedAlt mapa" width="1080" height="620" src="https://app.powerbi.com/view?r=eyJrIjoiNjZhMDcyNGYtYjdhNy00NDMyLTgyODMtZGRmNTUzZWFhMWYzIiwidCI6IjBmYWU4ZDI0LTNlZjMtNDY2YS1iOTUzLWEyZDExMDcyNmI3NyJ9" frameborder="0" allowFullScreen="true"></iframe>
